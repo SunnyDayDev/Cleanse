@@ -18,6 +18,7 @@ public protocol _ScopeBase {
 public protocol Scope : _ScopeBase {
 }
 
+
 /// This a special scope that means its not scoped
 public struct Unscoped : _ScopeBase {
 }
