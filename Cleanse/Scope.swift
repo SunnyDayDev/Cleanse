@@ -18,9 +18,14 @@ public protocol _ScopeBase {
 public protocol Scope : _ScopeBase {
 }
 
+
 /// This a special scope that means its not scoped
 public struct Unscoped : _ScopeBase {
 }
+
+/// Default provided scope for the consumer to use in the Root Component. One does not have to use this scope
+/// and may use their own in the root component, but this is provided for convenience.
+public struct Singleton : Scope {}
 
 extension _ScopeBase {
 
